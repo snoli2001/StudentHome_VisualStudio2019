@@ -12,22 +12,25 @@ namespace StudentHomeWebAplication2
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            
             routes.MapRoute(
-               name: "LandingPage",
+               name: "LandingPageRoute",
                url: "",
                defaults: new { controller = "Home", action = "LandingPage" }
            );
             routes.MapRoute(
-                name: "Default",
-                url: "",
+                name: "LoginRoute",
+                url: "Ingresar",
                 defaults: new { controller = "Student", action = "Login" }
             );
 
             routes.MapRoute(
-                name: "RegistroNewUser",
+                name: "RegisterRoute",
                 url: "RegistrarNuevoUsuario",
                 defaults: new { controller = "Student", action = "Register" }
             );
+
+           
 
         }
     }
