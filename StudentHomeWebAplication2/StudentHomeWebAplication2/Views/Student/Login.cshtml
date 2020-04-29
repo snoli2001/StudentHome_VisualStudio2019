@@ -1,5 +1,4 @@
-﻿@using StudentHomeWebAplication.Models;
-@model StudentCLS
+﻿
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/ViewsTemplates/Login_Simply_white.cshtml";
@@ -70,7 +69,7 @@
 <script>
     function Registro()
     {
-      location.href="@Url.RouteUrl("RegistroNewUser")";
+      location.href="@Url.RouteUrl("RegisterRoute")";
 
     }
 
